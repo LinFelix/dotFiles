@@ -1,3 +1,17 @@
+"
+" Disclaimer, this nvimrc is not my work
+"
+"it was recommended from the NeoVim fork
+"
+"
+"note: i will either stop using NeoVim or change this .rc-file
+
+
+
+
+
+
+
 
 " An example for a vimrc file.
 "
