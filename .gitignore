@@ -24,3 +24,4 @@ cabal.sandbox.config
 .stack-work/
 cabal.project.local
 *xmonad.errors
+xmonad/.xmonad/xmonad-x86_64-linux
