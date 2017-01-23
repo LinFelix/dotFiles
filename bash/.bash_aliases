@@ -1,0 +1,5 @@
+alias cat='cat -n'
+alias l='ls -al'
+alias gs='git status'
+alias yolo='sudo !! -f'
+alias rgrep=grep -r -i -n -C 2'
