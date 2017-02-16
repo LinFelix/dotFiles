@@ -11,5 +11,6 @@ fi
 xscreensaver &
 xsetroot -cursor_name left_prt &
 setxkbmap -layout de -variant neo
+xset r rate 150 55
+# TODO scim for traditional chinese input, with neo and pinyin
 exec xmonad
-#exec openbox-session
