@@ -8,7 +8,7 @@ baseConfig = desktopConfig
 
 main = xmonad $ baseConfig
     { modMask     = mod4Mask
-    , terminal    = "uxterm -bc -bcf 100 -bcn 100 -bg black -fg orange -cr green"
+    , terminal    = "xterm -bc -bcf 100 -bcn 100 -bg black -fg orange -cr green"
     -- these two line are for java-gui apps, hower it did not play nicely with gtk3
     -- , startupHook = ewmhDesktopStartup >> setWMName "LG3D"
     -- , startupHook = startupHook desktopConfig >> setWMName "LG3D"
