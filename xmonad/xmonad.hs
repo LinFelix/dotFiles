@@ -12,9 +12,6 @@ main = xmonad $ baseConfig
     -- these two line are for java-gui apps, hower it did not play nicely with gtk3
     -- , startupHook = ewmhDesktopStartup >> setWMName "LG3D"
     -- , startupHook = startupHook desktopConfig >> setWMName "LG3D"
-    -- , myLauncher     = "$(yeganesh -x)"
-    -- myLauncher = "$(yeganesh -x -- -fn '-*-terminus-*-r-normal-*-*-120-*-*-*-*-iso8859-*' -nb '#000000' -nf '#FFFFFF' -sb '#7C7C7C' -sf '#CEFFAC')"
-
     }
     `additionalKeys`
     [ ((mod4Mask, xK_p), spawn "$(yeganesh -x)")
