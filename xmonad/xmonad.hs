@@ -14,7 +14,7 @@ main = xmonad $ baseConfig
     -- , startupHook = startupHook desktopConfig >> setWMName "LG3D"
     }
     `additionalKeys`
-    [ ((mod4Mask, xK_p), spawn "$(yeganesh -x)")
+    [ ((mod4Mask, xK_p), spawn "$(~/.cabal/bin/yeganesh -x)")
     , ((mod4Mask, xK_u), spawn "gnome-terminal")
     , ((mod4Mask, xK_i), spawn "chromium")
     , ((mod4Mask, xK_a), spawn "emacsclient -nc")
