@@ -18,6 +18,9 @@ main = xmonad $ baseConfig
     , ((mod4Mask, xK_u), spawn "gnome-terminal")
     , ((mod4Mask, xK_i), spawn "chromium")
     , ((mod4Mask, xK_a), spawn "emacsclient -nc")
+    , ((mod4Mask, xK_x), spawn "urxvt")
+    , ((mod4Mask, xK_v), spawn "konsole")
+    , ((mod4Mask, xK_f), spawn "firefox")
     ]
     `additionalKeysP`
     [ ("<XF86AudioMute>", spawn "pulseaudio-ctl mute")
