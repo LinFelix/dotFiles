@@ -1,13 +1,15 @@
 import XMonad
 import XMonad.Config.Desktop
 import XMonad.Util.EZConfig
+import XMonad.Layout.NoBorders
 -- import XMonad.Hooks.EwmhDesktops
 -- import XMonad.Hooks.SetWMName
 
 baseConfig = desktopConfig
 
 main = xmonad $ baseConfig
-    { modMask     = mod4Mask
+    { layoutHook  = smartBorders $ layoutHook defaultConfig
+    , modMask     = mod4Mask
     , terminal    = "xterm -bc -bcf 100 -bcn 100 -bg black -fg orange -cr green"
     -- these two line are for java-gui apps, hower it did not play nicely with gtk3
     -- , startupHook = ewmhDesktopStartup >> setWMName "LG3D"
