@@ -43,4 +43,7 @@ main = xmonad $ baseConfig
     , ("<XF86AudioRaiseVolume>", spawn "pulseaudio-ctl up")
     , ("<XF86MonBrightnessUp>", spawn "xbacklight -inc 10")
     , ("<XF86MonBrightnessDown>", spawn "xbacklight -dec 10")
+    -- toggles the touchpad, the script is from the arch wiki and not mine, that's
+    -- why it is not online, maybe I will write my own and put it online
+    , ("<XF86Tools>", spawn "sh ~/scripts/system_scripts/touchpad_toggle.sh")
     ]
