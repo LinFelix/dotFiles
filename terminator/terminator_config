@@ -1,20 +1,27 @@
-#
-# this config file is supposed to appear as link in ~/.config/terminator/config
-
 [global_config]
-  hide_tabbar = true
-
+  borderless = True
+  hide_tabbar = True
+  tab_position = bottom
+  title_font = Monaco 8
+  title_use_system_font = False
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
 [profiles]
   [[default]]
-    scrollbar_position = disabled
-    show_titlebar = false
-
-# some keybindings
-# Ctrl + Shift+ O Split terminals horizontally
-# Ctrl + Shift+ E Split terminals vertically
-# Ctrl + Shift+ W Close current Panel
-# Ctrl + Shift+ T Open new tab
-# Alt + ↑ Move to the terminal above the current one
-# Alt + ↓ Move to the terminal below the current one
-# Alt + ← Move to the terminal left of the current one
-# Alt + → Move to the terminal right of the current one
+    cursor_blink = False
+    cursor_color = "#ff5500"
+    cursor_color_fg = False
+    font = Monaco 8
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False

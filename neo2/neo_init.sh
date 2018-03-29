@@ -8,3 +8,5 @@
 
 #to only set neo
 setxkbmap -layout de -variant neo
+
+xset r rate 150 55

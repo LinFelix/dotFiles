@@ -10,7 +10,7 @@ fi
 
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
-xscreensaver &
+#xscreensaver &
 
 # requires feh
 # I wanted to use XMonad.Wallpaper, but it requires exactly
@@ -20,4 +20,5 @@ xsetroot -cursor_name left_prt &
 setxkbmap -layout de -variant neo
 xset r rate 150 55
 # TODO scim for traditional chinese input, with neo and pinyin
+pgrep redshift &> /dev/null || redshift &> /dev/null &
 exec xmonad
