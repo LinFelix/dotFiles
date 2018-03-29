@@ -1,0 +1,35 @@
+alias gc='git commit -a -m'
+alias g='git'
+alias gch='git checkout'
+alias v='vim'
+alias n='nvim'
+alias t='tmux'
+alias rgrep='grep -r -i -n -C 2'
+alias bloot=/data/practice/shell/keyboard_bluetooth_connetct_with_EOF.sh
+alias neo=/data/scriptsAndConfigs/neo2/neo_init.sh
+alias em='emacsclient -nc'
+alias et='emacsclient -t'
+#[[ $[ $RANDOM % 2 ] == 0 ]] && neofetch --cpu_temp C || [[ $[ $RANDOM % 2 ] == 0 ]] && screenfetch || archey3
+[[ $[ $RANDOM % 2 ] == 0 ]] && neofetch --cpu_temp C || archey3 -c green
+export ANDROID_HOME="/home/lambda/progBin/android"
+export ANDROID_SDK_ROOT="/home/lambda/progBin/android"
+export ANDROID_EMULATOR_USE_SYSTEM_LIBS=1
+export PATH=~/bin:/home/lambda/bin/bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:/opt/android-sdk/tools/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/lambda/shk/flink-1.2.1/bin:/home/lambda/shk/dataheap-1.2/build/manager:/home/lambda/shk/dataheap-1.2/build/datasources/dummy_source:/home/lambda/progsBin/emacs/src:/home/lambda/shk/flink-1.2.1/bin:/home/lambda/shk/dataheap-1.2/build/manager:/home/lambda/shk/dataheap-1.2/build/datasources/dummy_source:/home/lambda/progsBin/emacs/src
+export LANG=en_US.UTF-8
+export JAVA_HOME=/usr
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+# supposed to enable fuzzy matching                            
+# from forum:                                                  
+# https://superuser.com/a/815317                               
+# 0 -- vanilla completion (abc => abc)                         
+# 1 -- smart case completion (abc => Abc)                      
+# 2 -- word flex completion (abc => A-big-Car)                 
+# 3 -- full flex completion (abc => ABraCadabra)               
+#zstyle ':completion:*' matcher-list '' \                       
+#  'm:{a-z\-}={A-Z\_}' \                                        
+#  'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \   
+#  'r:|?=** m:{a-z\-}={A-Z\_}'
+zstyle ':completion:*' matcher-list '' \
+  'm:{a-z\-}={A-Z\_}' \
+  'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
+  'r:|?=** m:{a-z\-}={A-Z\_}'
